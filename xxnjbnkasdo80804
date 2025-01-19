@@ -1,4 +1,5 @@
 local UserInputService = game:GetService("UserInputService")
+local StarterGui = game:GetService("StarterGui")
 local player = game:GetService("Players").LocalPlayer
 
 local originalBulletTypes = {}
@@ -164,4 +165,11 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
     end
 end)
 
-print("Loaded , ctrl + k to apply settings, dont hold the gun, - ctrl + n normal bullet - ctrl + m explosive bullet to make it explode walk further from the target, - ctrl + Semicolon semi firemode - ctrl + Quote Auto firemode")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "jesus is the lord",
+    Text = "Script loaded, check console (F9).",
+    Duration = 5
+})
+
+print("Loaded , DONT HOLD THE GUN WHEN APPLYING OR CHANGING ANYTHING ctrl + k to apply settings, - ctrl + n normal bullet - ctrl + m explosive bullet to make it explode walk further from the target, - ctrl + Semicolon semi firemode - ctrl + Quote Auto firemode")
